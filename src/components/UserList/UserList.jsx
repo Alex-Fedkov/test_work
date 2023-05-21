@@ -23,7 +23,7 @@ const UserList = () => {
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchUsers(page));
+    dispatch(fetchUsers());
   }, [dispatch]);
 
   const onAddFollower = id => {
